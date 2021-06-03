@@ -22,7 +22,7 @@ pass_entry.place(x=115, y=180)
 
 
 # functions for login details and to clear and exit the program
-def check():
+def verify():
     username = ["Jason", "Yamkela", "Devin", "Shuaib"]
     passwords = ["1234", "abcd", "9876", "1020"]
     found = False
@@ -47,7 +47,7 @@ def exit_program():
 
 
 # placement of all the buttons needed for the program
-login_btn = Button(root, text="Login", fg="red", command=check)
+login_btn = Button(root, text="Login", fg="red", command=verify)
 login_btn.place(x=30, y=250)
 clear_btn = Button(root, text="Clear", fg="red", command=clear)
 clear_btn.place(x=170, y=250)
