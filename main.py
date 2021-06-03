@@ -17,7 +17,7 @@ user_entry.place(x=115, y=100)
 
 input_pass = Label(root, text="Password", bg="#f9826c")
 input_pass.place(x=160, y=150)
-pass_entry = Entry(root)
+pass_entry = Entry(root, show="*")
 pass_entry.place(x=115, y=180)
 
 
@@ -29,8 +29,8 @@ def verify():
     for x1 in range(len(username)):
         if user_entry.get() == username[x1] and pass_entry.get() == passwords[x1]:
             found = True
-        if found == True:
-            messagebox.showinfo("STATUS", "Access granted")
+    if found == True:
+        messagebox.showinfo("STATUS", "Access granted")
         root.destroy()
         import next
     else:
@@ -43,6 +43,7 @@ def clear():
 
 
 def exit_program():
+    messagebox.showinfo("GOING SO SOON ?", "Are you sure you want to exit?")
     root.destroy()
 
 

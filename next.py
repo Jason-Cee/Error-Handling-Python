@@ -28,6 +28,7 @@ def qualify():
 
 
 def exit_program():
+    messagebox.showinfo("GOING SO SOON ?", "Are you sure you want to exit?")
     window.destroy()
 
 
